@@ -1,6 +1,6 @@
 # Vertical Typescript with React/Express/Postgres
 
-Starter app that provides automatic contracts between the ui/api/database. One of the huge problems in TypeScript development is the divergence of types from what the data actually is - for example if you add a column to a table, or change the shape of an api response you have to manually update the models or interfaces covering those shapes. This repo shows one way of solving these problems.
+Starter app that provides automatic contracts between the ui/api/database. One of the huge problems in TypeScript development is the divergence of types from what the data shapes actually are - for example if you add a column to a table, or change the shape of an api response you have to manually update the models or interfaces covering those shapes. This repo shows one way of solving these problems.
 
 * Generates (useful) Typescript Database wrapper from database meta schemas
 * Generates (useful) Typescript REST client from router definitions
