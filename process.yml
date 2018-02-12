@@ -1,0 +1,29 @@
+apps:
+  - script: tsc
+    name: backend-compiler
+    instances: 1
+    cwd: ./backend
+    args:
+      - -w
+      - -p
+      - src
+    watch: false
+  - script: npm
+    name: backend
+    instances: 1
+    cwd: ./backend
+    args:
+      - start
+    watch: ./backend/built
+    env:
+      NODE_ENV: development
+  - script: npm
+    cwd: ./ui
+    args:
+      - run
+      - dev
+    instances: 1
+    name: ui
+    exec_mode: fork_mode
+    env:
+      NODE_ENV: development

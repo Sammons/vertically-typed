@@ -1,0 +1,30 @@
+version: '3'
+volumes:
+  pg_data:
+  pg_transactions:
+
+services:
+  database:
+    image: postgres:10
+    container_name: postgres
+    network_mode: bridge
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data/pgdata
+      - pg_transactions:/var/lib/postgresql/data/pgtransactions
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_INITDB_XLOGDIR: /var/lib/postgresql/data/pgtransactions
+      POSTGRES_DB: sample
+      POSTGRES_USER: sample
+      POSTGRES_PASSWORD: sample
+# for testing how prod output of webpack serves
+  nginx:
+    image: nginx:1.13.8
+    volumes:
+      - ./ui/dist:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"

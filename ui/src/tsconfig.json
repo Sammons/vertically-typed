@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "../built",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "lib": ["dom", "es2015.promise", "es2015"],
+    "jsx": "react"
+  }
+}
