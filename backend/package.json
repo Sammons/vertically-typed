@@ -1,10 +1,8 @@
 {
   "scripts": {
     "migrate": "node migrations/migrate.js",
-    "db-gen":
-      "node built/lib/postgres/definition-extractor.js && mv db.ts ./src/data/generated-db.ts",
-    "rest-gen":
-      "node built/lib/http/definition-extractor.js && mv rest-definition.ts ../ui/src/rest",
+    "db-gen": "node built/lib/postgres/definition-extractor.js && mv db.ts ./src/data/generated-db.ts",
+    "rest-gen": "node built/lib/http/definition-extractor.js && mv rest-definition.ts ../ui/src/rest",
     "start": "node built/app",
     "typescript-server": "tsc -w -p src"
   },
