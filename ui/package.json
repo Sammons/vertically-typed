@@ -18,6 +18,7 @@
     "babel-preset-react": "^6.0.0",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.16.0",
+    "bn.js": "^4.12.0",
     "css-loader": "^0.26.0",
     "fork-ts-checker-webpack-plugin": "0.2.10",
     "happypack": "4.0.0",
@@ -27,6 +28,7 @@
     "mobx": "3.4.1",
     "mobx-react": "4.3.5",
     "mobx-react-devtools": "4.2.15",
+    "pbkdf2": "^3.1.5",
     "postcss-loader": "2.0.9",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -43,7 +45,7 @@
     "uglify-js": "^3.0.15",
     "uglifyjs-webpack-plugin": "^1.1.8",
     "uuid": "3.1.0",
-    "webpack": "^3.10.0",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^3.1.14"
   }
 }
