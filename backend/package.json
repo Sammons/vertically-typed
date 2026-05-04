@@ -10,12 +10,12 @@
     "compression": "^1.7.1",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "knex": "^0.14.3",
+    "knex": "^3.2.10",
     "lodash": "^4.17.5",
     "moment": "^2.20.1",
     "pg": "^7.4.1",
     "superagent": "^3.8.2",
-    "uuid": "^3.2.1"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@types/compression": "0.0.35",
